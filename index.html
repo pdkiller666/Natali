@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Вокальная студия Орфей</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">
+        <span class="logo__icon">♪</span>
+        <span class="logo__text">Орфей</span>
+      </a>
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="#about" class="nav__link">О студии</a></li>
+          <li><a href="#services" class="nav__link">Услуги</a></li>
+          <li><a href="#teachers" class="nav__link">Преподаватели</a></li>
+          <li><a href="#schedule" class="nav__link">Расписание</a></li>
+          <li><a href="#reviews" class="nav__link">Отзывы</a></li>
+          <li><a href="#contact" class="nav__link">Контакты</a></li>
+        </ul>
+      </nav>
+      <button class="burger" id="burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__inner">
+        <h1 class="hero__title">Раскрой свой голос с&nbsp;«Орфеем»</h1>
+        <p class="hero__subtitle">Профессиональная вокальная студия для детей и взрослых. Индивидуальный подход, современные методики, творческая атмосфера.</p>
+        <a href="#contact" class="btn btn--primary">Записаться на пробное занятие</a>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="container">
+        <h2 class="section__title">О студии</h2>
+        <div class="about__content">
+          <div class="about__text">
+            <p>Вокальная студия «Орфей» — это пространство, где музыка становится частью жизни. Мы помогаем ученикам любого возраста и уровня подготовки найти свой уникальный голос, развить слух и чувство ритма, научиться уверенно держаться на сцене.</p>
+            <p>Наши преподаватели — действующие музыканты и педагоги с многолетним опытом. Мы используем авторские методики, сочетающие классическую школу и современные вокальные техники.</p>
+            <ul class="about__features">
+              <li>Индивидуальные и групповые занятия</li>
+              <li>Подготовка к конкурсам и фестивалям</li>
+              <li>Студийная запись</li>
+              <li>Сценическое мастерство</li>
+            </ul>
+          </div>
+          <div class="about__image">
+            <div class="about__image-placeholder">
+              <span class="about__image-icon">🎵</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services" id="services">
+      <div class="container">
+        <h2 class="section__title">Наши услуги</h2>
+        <div class="services__grid">
+          <div class="service-card">
+            <div class="service-card__icon">🎤</div>
+            <h3 class="service-card__title">Вокал для начинающих</h3>
+            <p class="service-card__desc">Постановка голоса, развитие слуха и чувства ритма с нуля. Индивидуальная программа для каждого ученика.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-card__icon">🎶</div>
+            <h3 class="service-card__title">Профессиональный вокал</h3>
+            <p class="service-card__desc">Совершенствование техники, расширение диапазона, работа над сложными вокальными приёмами.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-card__icon">👶</div>
+            <h3 class="service-card__title">Детский вокал</h3>
+            <p class="service-card__desc">Развивающие занятия для детей от 5 лет в игровой форме. Постановка голоса и сценическая свобода.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-card__icon">🎼</div>
+            <h3 class="service-card__title">Студийная запись</h3>
+            <p class="service-card__desc">Профессиональная запись вокала, сведение и мастеринг. Помощь в подготовке репертуара.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section teachers" id="teachers">
+      <div class="container">
+        <h2 class="section__title">Наши преподаватели</h2>
+        <div class="teachers__grid">
+          <div class="teacher-card">
+            <div class="teacher-card__photo">
+              <div class="teacher-card__photo-placeholder">👩‍🏫</div>
+            </div>
+            <h3 class="teacher-card__name">Анна Светлова</h3>
+            <p class="teacher-card__role">Основатель студии, педагог по вокалу</p>
+            <p class="teacher-card__bio">Опыт преподавания более 15 лет. Лауреат международных конкурсов. Автор уникальной методики постановки голоса.</p>
+          </div>
+          <div class="teacher-card">
+            <div class="teacher-card__photo">
+              <div class="teacher-card__photo-placeholder">👨‍🏫</div>
+            </div>
+            <h3 class="teacher-card__name">Дмитрий Новиков</h3>
+            <p class="teacher-card__role">Педагог по эстрадному вокалу</p>
+            <p class="teacher-card__bio">Действующий музыкант, участник телевизионных проектов. Специализируется на современной вокальной технике.</p>
+          </div>
+          <div class="teacher-card">
+            <div class="teacher-card__photo">
+              <div class="teacher-card__photo-placeholder">👩‍🎤</div>
+            </div>
+            <h3 class="teacher-card__name">Елена Морозова</h3>
+            <p class="teacher-card__role">Педагог по детскому вокалу</p>
+            <p class="teacher-card__bio">Опыт работы с детьми более 10 лет. Находит подход к каждому ребёнку, развивает любовь к музыке с ранних лет.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section schedule" id="schedule">
+      <div class="container">
+        <h2 class="section__title">Расписание занятий</h2>
+        <div class="schedule__table">
+          <div class="schedule__row schedule__header">
+            <span class="schedule__cell">День</span>
+            <span class="schedule__cell">Время</span>
+            <span class="schedule__cell">Направление</span>
+            <span class="schedule__cell">Преподаватель</span>
+          </div>
+          <div class="schedule__row">
+            <span class="schedule__cell">Понедельник</span>
+            <span class="schedule__cell">16:00 – 20:00</span>
+            <span class="schedule__cell">Индивидуальные занятия</span>
+            <span class="schedule__cell">Анна Светлова</span>
+          </div>
+          <div class="schedule__row">
+            <span class="schedule__cell">Вторник</span>
+            <span class="schedule__cell">15:00 – 19:00</span>
+            <span class="schedule__cell">Эстрадный вокал</span>
+            <span class="schedule__cell">Дмитрий Новиков</span>
+          </div>
+          <div class="schedule__row">
+            <span class="schedule__cell">Среда</span>
+            <span class="schedule__cell">16:00 – 20:00</span>
+            <span class="schedule__cell">Детский вокал</span>
+            <span class="schedule__cell">Елена Морозова</span>
+          </div>
+          <div class="schedule__row">
+            <span class="schedule__cell">Четверг</span>
+            <span class="schedule__cell">15:00 – 19:00</span>
+            <span class="schedule__cell">Индивидуальные занятия</span>
+            <span class="schedule__cell">Анна Светлова</span>
+          </div>
+          <div class="schedule__row">
+            <span class="schedule__cell">Пятница</span>
+            <span class="schedule__cell">16:00 – 20:00</span>
+            <span class="schedule__cell">Групповые занятия</span>
+            <span class="schedule__cell">Все педагоги</span>
+          </div>
+          <div class="schedule__row">
+            <span class="schedule__cell">Суббота</span>
+            <span class="schedule__cell">10:00 – 15:00</span>
+            <span class="schedule__cell">Студийная запись</span>
+            <span class="schedule__cell">По записи</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reviews" id="reviews">
+      <div class="container">
+        <h2 class="section__title">Отзывы наших учеников</h2>
+        <div class="reviews__slider">
+          <div class="reviews__track" id="reviewsSlider">
+            <div class="review-card">
+              <div class="review-card__stars">★★★★★</div>
+              <p class="review-card__text">«Пришла в студию с нулевым опытом, боялась даже петь при других. Анна Светлова помогла раскрепоститься и поверить в себя. Через полгода уже выступала на отчётном концерте!»</p>
+              <p class="review-card__author">— Екатерина, 28 лет</p>
+            </div>
+            <div class="review-card">
+              <div class="review-card__stars">★★★★★</div>
+              <p class="review-card__text">«Очень рады, что выбрали студию Орфей для дочери. Ей 7 лет, ходит с огромным удовольствием. Преподаватели находят подход к детям, занятия проходят в игровой форме. Результат виден уже через месяц!»</p>
+              <p class="review-card__author">— Мария, мама Софии</p>
+            </div>
+            <div class="review-card">
+              <div class="review-card__stars">★★★★★</div>
+              <p class="review-card__text">«Профессиональный подход к делу. Записывал здесь свой первый альбом. Дмитрий помог с аранжировкой и сведением. Качество на высшем уровне. Рекомендую!»</p>
+              <p class="review-card__author">— Алексей, 34 года</p>
+            </div>
+            <div class="review-card">
+              <div class="review-card__stars">★★★★★</div>
+              <p class="review-card__text">«Занимаюсь уже второй год. Очень нравится атмосфера в студии — творческая, дружеская, без лишнего пафоса. За это время значительно вырос вокально, научился брать ноты, о которых раньше и не мечтал.»</p>
+              <p class="review-card__author">— Иван, 22 года</p>
+            </div>
+          </div>
+          <div class="reviews__controls">
+            <button class="reviews__btn reviews__btn--prev" id="prevReview" aria-label="Предыдущий отзыв">‹</button>
+            <button class="reviews__btn reviews__btn--next" id="nextReview" aria-label="Следующий отзыв">›</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container">
+        <h2 class="section__title">Свяжитесь с нами</h2>
+        <div class="contact__content">
+          <div class="contact__info">
+            <div class="contact__item">
+              <span class="contact__icon">📍</span>
+              <div>
+                <h3>Адрес</h3>
+                <p>г. Москва, ул. Музыкальная, д. 15, офис 304</p>
+              </div>
+            </div>
+            <div class="contact__item">
+              <span class="contact__icon">📞</span>
+              <div>
+                <h3>Телефон</h3>
+                <p><a href="tel:+74951234567">+7 (495) 123-45-67</a></p>
+              </div>
+            </div>
+            <div class="contact__item">
+              <span class="contact__icon">✉️</span>
+              <div>
+                <h3>Email</h3>
+                <p><a href="mailto:info@orfei-studio.ru">info@orfei-studio.ru</a></p>
+              </div>
+            </div>
+            <div class="contact__item">
+              <span class="contact__icon">🕐</span>
+              <div>
+                <h3>Режим работы</h3>
+                <p>Пн–Сб: 10:00 – 21:00<br>Вс: выходной</p>
+              </div>
+            </div>
+          </div>
+          <form class="contact__form" id="contactForm" novalidate>
+            <div class="form__group">
+              <label for="name" class="form__label">Ваше имя *</label>
+              <input type="text" id="name" class="form__input" placeholder="Иван Иванов" required>
+            </div>
+            <div class="form__group">
+              <label for="phone" class="form__label">Телефон *</label>
+              <input type="tel" id="phone" class="form__input" placeholder="+7 (999) 123-45-67" required>
+            </div>
+            <div class="form__group">
+              <label for="email" class="form__label">Email *</label>
+              <input type="email" id="email" class="form__input" placeholder="example@mail.ru" required>
+            </div>
+            <div class="form__group">
+              <label for="message" class="form__label">Сообщение</label>
+              <textarea id="message" class="form__input form__textarea" placeholder="Ваше сообщение..." rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary form__submit">Отправить заявку</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__copy">© 2025 Вокальная студия «Орфей». Все права защищены.</p>
+      <div class="footer__social">
+        <a href="#" class="footer__social-link" aria-label="VK">VK</a>
+        <a href="#" class="footer__social-link" aria-label="Instagram">IG</a>
+        <a href="#" class="footer__social-link" aria-label="YouTube">YT</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal" id="successModal">
+    <div class="modal__overlay" id="modalOverlay"></div>
+    <div class="modal__content">
+      <button class="modal__close" id="modalClose" aria-label="Закрыть">×</button>
+      <div class="modal__icon">✓</div>
+      <h3 class="modal__title">Спасибо за заявку!</h3>
+      <p class="modal__text">Мы свяжемся с вами в ближайшее время для уточнения деталей.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
