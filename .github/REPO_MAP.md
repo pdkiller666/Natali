@@ -5,29 +5,34 @@
 ```
 /
 ├── .github/
+│   ├── REPO_MAP.md
 │   └── workflows/
-│       ├── ci.yml              # CI-пайплайн
-│       └── deploy.yml          # Deploy-пайплайн
-├── .gitignore                  # Игнорируемые файлы
-├── AGENT_INSTRUCTIONS.md       # Инструкции для агента
-├── README.md                   # Документация
-├── index.html                  # Главная страница
-├── script.js                   # Клиентская логика
-└── style.css                   # Стили
+│       ├── ci.yml
+│       └── deploy.yml
+├── .gitignore
+├── AGENT_INSTRUCTIONS.md
+├── README.md
+├── index.html
+├── script.js
+└── style.css
 ```
 
 ## Ключевые файлы
-- **index.html**: Точка входа, разметка страницы
-- **script.js**: Клиентская логика, обработка событий
-- **style.css**: Визуальное оформление
-- **ci.yml**: Автоматическая проверка кода
-- **deploy.yml**: Автоматическое развёртывание
+- `index.html` — основной HTML-документ (точка входа)
+- `script.js` — клиентская логика на JavaScript
+- `style.css` — стили оформления
+- `AGENT_INSTRUCTIONS.md` — инструкции для агента/разработчика
+- `README.md` — описание проекта
+- `.gitignore` — правила игнорирования файлов Git
+- `.github/workflows/ci.yml` — CI-пайплайн (проверки)
+- `.github/workflows/deploy.yml` — пайплайн деплоя
 
 ## Точки входа
-- **index.html** — основной файл приложения
-- Запуск: открыть `index.html` в браузере или через `npx serve .`
+- **Основная**: `index.html` — открывается в браузере
+- **Запуск**: открыть `index.html` в любом современном браузере (или через Live Server)
 
 ## Инварианты (что нельзя менять)
-- **index.html** — единственная точка входа, удаление сломает приложение
-- **script.js** и **style.css** — обязательные зависимости index.html
-- **.github/workflows/** — CI/CD пайплайны, изменение может нарушить деплой
+- `index.html` — единственная точка входа, не удалять и не переименовывать
+- `script.js` и `style.css` — обязательные зависимости `index.html`
+- `.github/workflows/` — CI/CD пайплайны, не удалять без согласования
+- `AGENT_INSTRUCTIONS.md` — содержит критичные инструкции для разработки
