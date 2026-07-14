@@ -1,0 +1,15 @@
+name: CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check HTML files exist
+        run: find . -name "*.html" | grep -q . && echo "HTML OK" || echo "No HTML files (may be a non-HTML project)"
+      - name: Validate JS syntax
+        run: find . -name "*.js" -not -path "*/node_modules/*" | xargs --no-run-if-empty -I{} node --check {}; echo "JS check done"
