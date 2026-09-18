@@ -122,19 +122,16 @@ document.addEventListener('DOMContentLoaded', function() {
       var email = emailInput.value.trim();
       var message = messageInput ? messageInput.value.trim() : '';
 
-      var text = 'Здравствуйте! Хочу записаться в вокальную студию «Орфей»:
-' +
-        '• Имя: ' + name + '
-' +
-        '• Телефон: ' + phone + '
-' +
-        '• Email: ' + email;
+      var text = [
+        'Здравствуйте! Хочу записаться в вокальную студию «Орфей»:',
+        '• Имя: ' + name,
+        '• Телефон: ' + phone,
+        '• Email: ' + email
+      ].join('\n');
 
       if (message) {
-        text += '
-• Сообщение: ' + message;
+        text += '\n• Сообщение: ' + message;
       }
-
       var tgUrl = 'https://t.me/tiy247?text=' + encodeURIComponent(text);
 
       var modalTgLink = document.getElementById('modalTgLink');
