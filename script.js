@@ -107,6 +107,7 @@ document.addEventListener('DOMContentLoaded', function() {
       var nameInput = document.getElementById('name');
       var phoneInput = document.getElementById('phone');
       var emailInput = document.getElementById('email');
+      var messageInput = document.getElementById('message');
 
       var isNameValid = validateField(nameInput);
       var isPhoneValid = validateField(phoneInput);
@@ -114,6 +115,31 @@ document.addEventListener('DOMContentLoaded', function() {
 
       if (!isNameValid || !isPhoneValid || !isEmailValid) {
         return;
+      }
+
+      var name = nameInput.value.trim();
+      var phone = phoneInput.value.trim();
+      var email = emailInput.value.trim();
+      var message = messageInput ? messageInput.value.trim() : '';
+
+      var text = 'Здравствуйте! Хочу записаться в вокальную студию «Орфей»:
+' +
+        '• Имя: ' + name + '
+' +
+        '• Телефон: ' + phone + '
+' +
+        '• Email: ' + email;
+
+      if (message) {
+        text += '
+• Сообщение: ' + message;
+      }
+
+      var tgUrl = 'https://t.me/tiy247?text=' + encodeURIComponent(text);
+
+      var modalTgLink = document.getElementById('modalTgLink');
+      if (modalTgLink) {
+        modalTgLink.href = tgUrl;
       }
 
       var submitBtn = form.querySelector('.form__submit');
@@ -125,7 +151,8 @@ document.addEventListener('DOMContentLoaded', function() {
         submitBtn.disabled = false;
         submitBtn.textContent = 'Отправить заявку';
         showModal();
-      }, 1500);
+        window.open(tgUrl, '_blank');
+      }, 400);
     });
 
     modalClose.addEventListener('click', hideModal);
